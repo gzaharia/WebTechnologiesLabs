@@ -6,9 +6,22 @@ So, I tried to follow some points then I started the project:
  * great structural organization
  * useful information.
 
-### __**Observation**__  
+### __**Observations**__  
 
-I observed that we can use bootstrap in two modes: with access on internet or without. Having Internet connection we can just put in our index.html references links and use it , second method we need to download the all packages for Bootstrap.
+I observed that we can use bootstrap in two modes: with access on internet or without. Having Internet connection we can just put in our index.html references links and use it , second method we need to download the all packages for Bootstrap.  
+### __**Conclusion**__ 
+
+During this laboratory work I got experince working with easy to learn Front-End Framework and how useful is this.Using Bootstrap we can develop a dynamically web pages and applications. It also comes with a library of buttons, navigation styles, and other reusable tools. Above all, Bootstrap includes a lot of code to reduce many of the vexing variations among web browsers and platforms.  
+
+
+### __**References**__  
+[Got familiar with Bootstrap](https://www.w3schools.com/bootstrap/)  
+
+[Web development](https://www.ibm.com/developerworks/library/wa-bootstrap/index.html)
+
+
+
+
 
 
 
