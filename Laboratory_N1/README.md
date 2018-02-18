@@ -15,7 +15,7 @@ During this laboratory work I got experince working with easy to learn Front-End
 
 
 ### __**References**__  
-[Got familiar with Bootstrap](https://www.w3schools.com/bootstrap/)  
+[Get familiar with Bootstrap](https://www.w3schools.com/bootstrap/)  
 
 [Web development](https://www.ibm.com/developerworks/library/wa-bootstrap/index.html)
 
