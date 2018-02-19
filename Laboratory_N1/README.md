@@ -4,7 +4,8 @@ I chose to perform a website for buying , selling mobile applications of differe
 So, I tried to follow some points then I started the project:  
  * select the design
  * great structural organization
- * useful information.
+ * useful information.  
+ Also, I sorted in categories the mobile apps that will help the user to choose what he want, so I performed some aditional references pages , like food.html, music.html.
 
 ### __**Observations**__  
 
@@ -12,6 +13,7 @@ I observed that we can use bootstrap in two modes: with access on internet or wi
 ### __**Conclusion**__ 
 
 During this laboratory work I got experince working with easy to learn Front-End Framework and how useful is this.Using Bootstrap we can develop a dynamically web pages and applications. It also comes with a library of buttons, navigation styles, and other reusable tools. Above all, Bootstrap includes a lot of code to reduce many of the vexing variations among web browsers and platforms.  
+The Idea of creating a website about mobile apps I think is actual, because have an added advantage where you can code an app into utilizing various features of a native device. So, once downloaded they can use features like Camera that can scan PFDs, QR and Bar codes and NFC to use for payments, GPS to connect with maps and other services and accelerometer, gyro meter and compass that can be utilized for thousands of different purposes.
 
 
 ### __**References**__  
