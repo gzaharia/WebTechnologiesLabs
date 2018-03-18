@@ -21,4 +21,4 @@ that contains the pages common elemments(navbar and footer) and also a layout fo
 
 
 
-[logo]: MVC.png "my image"
+[logo]: ./MVC.png "my image"
