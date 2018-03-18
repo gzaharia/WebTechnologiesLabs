@@ -20,5 +20,7 @@ files into Content folder and all .js into Scripts folder, then I added BundleCo
 that contains the pages common elemments(navbar and footer) and also a layout for each other pages(Index, About, Contacts etc)
 
 
+Reference-style: 
+![alt text][logo]
 
-[logo]: ./MVC.png "my image"
+[logo]: https://github.com/gzaharia/WebTechnologiesLabs/blob/master/Laboratory_N2/MVC.png "my image"
