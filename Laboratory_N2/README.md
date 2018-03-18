@@ -23,5 +23,3 @@ that contains the pages common elemments(navbar and footer) and also a layout fo
 ![alt text][logo]
 
 [logo]: MVC.png "my image"
-
-<div style="text-align:center"><img src ="MVC.png" /></div>
