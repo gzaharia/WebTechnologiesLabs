@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "e19dfc47257e63854d88f869fc699019ad31cbdc"
+    "signature": "d1965ca39baafd4312d5aeb1b27bcea4272e48d7"
   },
   "compilationOptions": {
     "defines": [
@@ -23,11 +23,16 @@
     ".NETCoreApp,Version=v2.0": {
       "xTremeShop/1.0.0": {
         "dependencies": {
+          "AutoMapper": "6.2.2",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "3.2.0",
           "BuildBundlerMinifier": "2.6.375",
+          "BundlerMinifier.Core": "2.6.375",
+          "LigerShark.WebOptimizer.Core": "1.0.215",
           "Microsoft.AspNetCore.All": "2.0.7",
-          "Microsoft.EntityFrameworkCore.Tools": "2.0.2",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.3",
+          "Sendgrid": "9.9.0",
+          "bootstrap": "4.1.0"
         },
         "runtime": {
           "xTremeShop.dll": {}
@@ -36,7 +41,61 @@
           "xTremeShop.dll": {}
         }
       },
+      "AutoMapper/6.2.2": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "NETStandard.Library": "2.0.0",
+          "System.Collections.Concurrent": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq.Queryable": "4.3.0",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
+        "dependencies": {
+          "AutoMapper": "6.2.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyModel": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "bootstrap/4.1.0": {
+        "dependencies": {
+          "jQuery": "3.0.0",
+          "popper.js": "1.14.0"
+        }
+      },
       "BuildBundlerMinifier/2.6.375": {},
+      "BundlerMinifier.Core/2.6.375": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0",
+          "NUglify": "1.5.10",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/dotnet-bundle.dll": {}
+        },
+        "compile": {
+          "lib/netcoreapp2.0/dotnet-bundle.dll": {}
+        }
+      },
+      "jQuery/3.0.0": {},
       "Libuv/1.10.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
@@ -74,6 +133,24 @@
             "rid": "win-x86",
             "assetType": "native"
           }
+        }
+      },
+      "LigerShark.WebOptimizer.Analyzers/1.0.6": {},
+      "LigerShark.WebOptimizer.Core/1.0.215": {
+        "dependencies": {
+          "LigerShark.WebOptimizer.Analyzers": "1.0.6",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.2",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.2",
+          "Microsoft.AspNetCore.Mvc.TagHelpers": "2.0.3",
+          "Microsoft.AspNetCore.Razor.Runtime": "2.0.2",
+          "Microsoft.Extensions.Configuration.Binder": "2.0.1",
+          "NUglify": "1.5.10"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebOptimizer.Core.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/WebOptimizer.Core.dll": {}
         }
       },
       "Microsoft.ApplicationInsights/2.4.0": {
@@ -2505,13 +2582,26 @@
           "lib/netstandard1.3/NuGet.Frameworks.dll": {}
         }
       },
+      "NUglify/1.5.10": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/NUglify.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/NUglify.dll": {}
+        }
+      },
+      "popper.js/1.14.0": {},
       "Remotion.Linq/2.1.1": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Linq": "4.3.0",
           "System.Linq.Expressions": "4.3.0",
-          "System.Linq.Queryable": "4.0.1",
+          "System.Linq.Queryable": "4.3.0",
           "System.ObjectModel": "4.3.0",
           "System.Reflection": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
@@ -2686,6 +2776,19 @@
             "rid": "win-x86",
             "assetType": "native"
           }
+        }
+      },
+      "Sendgrid/9.9.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.0.2",
+          "NETStandard.Library": "2.0.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/SendGrid.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/SendGrid.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.7": {
@@ -3247,7 +3350,7 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Linq.Queryable/4.0.1": {
+      "System.Linq.Queryable/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
@@ -4240,6 +4343,27 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoMapper/6.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eGKcnJdoF5rYMWPUaSPtlWdvua9xw4hnQN5kM/X4AXLGKghrtPIaMv+RYoA3sj0kyZ3X6wZ1Qj67F+u0pCCPaw==",
+      "path": "automapper/6.2.2",
+      "hashPath": "automapper.6.2.2.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-528nEpAwniNn8Z6Ae9qTiM/kN4f0BxmWE9mDMEkqKKGxbuElmv6Kj9DVvTXECJkIt6ARerb9+vYbOifNpcwvXQ==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/3.2.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.3.2.0.nupkg.sha512"
+    },
+    "bootstrap/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MpThvC2aO+DVfGP76J4TBIZ23pwyIkcGp2miNvQITqjNoGwLtGfY7pRU1u33Ot/7DU20LY2Ur6ZYlM0KGtCglg==",
+      "path": "bootstrap/4.1.0",
+      "hashPath": "bootstrap.4.1.0.nupkg.sha512"
+    },
     "BuildBundlerMinifier/2.6.375": {
       "type": "package",
       "serviceable": true,
@@ -4247,12 +4371,40 @@
       "path": "buildbundlerminifier/2.6.375",
       "hashPath": "buildbundlerminifier.2.6.375.nupkg.sha512"
     },
+    "BundlerMinifier.Core/2.6.375": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dGLElri2nWWuUzneWT4ntGd/4tIDQwvoL2HpZt+5IgWQA+bK6nTXWayWXcL7crZjeUpq04Wxy3zbxirYJr3YWw==",
+      "path": "bundlerminifier.core/2.6.375",
+      "hashPath": "bundlerminifier.core.2.6.375.nupkg.sha512"
+    },
+    "jQuery/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xFfntV19HzCtKdJWOp/XT9PUY3SslokTDDLFJZdBug36j1XVhw1+vPQ/n7Gd5y+jdpesn5B1m1yn1qIUq57jlA==",
+      "path": "jquery/3.0.0",
+      "hashPath": "jquery.3.0.0.nupkg.sha512"
+    },
     "Libuv/1.10.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "path": "libuv/1.10.0",
       "hashPath": "libuv.1.10.0.nupkg.sha512"
+    },
+    "LigerShark.WebOptimizer.Analyzers/1.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Qe5UuBBl0U3l335flvpnHke7pok8EBWMyxHX+2ahtLHGmRnsrsUamRgD9pyBI86n8GLQOTgpTVf6/Y5MaLy1vw==",
+      "path": "ligershark.weboptimizer.analyzers/1.0.6",
+      "hashPath": "ligershark.weboptimizer.analyzers.1.0.6.nupkg.sha512"
+    },
+    "LigerShark.WebOptimizer.Core/1.0.215": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gPTZBI+XgJwCBOUBiG9RNJ2sp689XLWFop3Xbkb21Ddx3ctp9CwvGd52Tzvaj4klga2dy8AOJc56u9LqLd9AxA==",
+      "path": "ligershark.weboptimizer.core/1.0.215",
+      "hashPath": "ligershark.weboptimizer.core.1.0.215.nupkg.sha512"
     },
     "Microsoft.ApplicationInsights/2.4.0": {
       "type": "package",
@@ -5472,6 +5624,20 @@
       "path": "nuget.frameworks/4.0.0",
       "hashPath": "nuget.frameworks.4.0.0.nupkg.sha512"
     },
+    "NUglify/1.5.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-do9KYDUEbCVMkSFF3P3lJtcCuLLpRAxchFaIY7vidfB4hgdik97f8iqj0dVmJK1X3eZO8jTuGD0CUUYbaFTR8Q==",
+      "path": "nuglify/1.5.10",
+      "hashPath": "nuglify.1.5.10.nupkg.sha512"
+    },
+    "popper.js/1.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SPxZdXknelgQ015wey7GMZvsVdt/SyEmHYORhEp5k/uF9MUk9DPtkn+6dR98fud2hVWJjZm9KKr474+r7WQt+A==",
+      "path": "popper.js/1.14.0",
+      "hashPath": "popper.js.1.14.0.nupkg.sha512"
+    },
     "Remotion.Linq/2.1.1": {
       "type": "package",
       "serviceable": true,
@@ -5625,6 +5791,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "Sendgrid/9.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3v4aIYXqTvhnozBvpCyf+U9DMiZzN9s4m7tpl8RjVHRN0IUKSFwJ0eio7GVjT03vTTUOXhOY8M+15zLYzQGhYQ==",
+      "path": "sendgrid/9.9.0",
+      "hashPath": "sendgrid.9.9.0.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_green/1.1.7": {
       "type": "package",
@@ -5948,12 +6121,12 @@
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
-    "System.Linq.Queryable/4.0.1": {
+    "System.Linq.Queryable/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
-      "path": "system.linq.queryable/4.0.1",
-      "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
+      "sha512": "sha512-In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
+      "path": "system.linq.queryable/4.3.0",
+      "hashPath": "system.linq.queryable.4.3.0.nupkg.sha512"
     },
     "System.Net.Http/4.3.0": {
       "type": "package",

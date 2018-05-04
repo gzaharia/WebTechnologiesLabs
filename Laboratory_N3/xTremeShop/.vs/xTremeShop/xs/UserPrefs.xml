@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{753466A9-D45C-4FAD-A0B6-370167282F6D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+    <Files>
+      <File FileName="Data/ApplicationDbContext.cs" Line="20" Column="29" />
+      <File FileName="xTremeShop.csproj" Line="9" Column="13" />
+      <File FileName="Startup.cs" Line="30" Column="87" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.xTremeShop PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

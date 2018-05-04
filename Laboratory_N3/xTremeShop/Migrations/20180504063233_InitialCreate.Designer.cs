@@ -11,15 +11,14 @@ using xTremeShop.Data;
 namespace xTremeShop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180422153453_Initial")]
-    partial class Initial
+    [Migration("20180504063233_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.0.2-rtm-10011")
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "2.0.2-rtm-10011");
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -39,8 +38,7 @@ namespace xTremeShop.Migrations
 
                     b.HasIndex("NormalizedName")
                         .IsUnique()
-                        .HasName("RoleNameIndex")
-                        .HasFilter("[NormalizedName] IS NOT NULL");
+                        .HasName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles");
                 });
@@ -174,16 +172,30 @@ namespace xTremeShop.Migrations
 
                     b.HasIndex("NormalizedUserName")
                         .IsUnique()
-                        .HasName("UserNameIndex")
-                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+                        .HasName("UserNameIndex");
 
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("xTremeShop.Models.LibraryApps", b =>
+                {
+                    b.Property<int>("LibaryId");
+
+                    b.Property<int>("AppId");
+
+                    b.HasKey("LibaryId", "AppId");
+
+                    b.HasIndex("AppId");
+
+                    b.ToTable("LibraryApps");
                 });
 
             modelBuilder.Entity("xTremeShop.Models.MobileApp", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<byte[]>("AppIcon");
 
                     b.Property<string>("Category");
 
@@ -198,6 +210,20 @@ namespace xTremeShop.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MobileApps");
+                });
+
+            modelBuilder.Entity("xTremeShop.Models.UserLibrary", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserLibraries");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -243,6 +269,26 @@ namespace xTremeShop.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("xTremeShop.Models.LibraryApps", b =>
+                {
+                    b.HasOne("xTremeShop.Models.MobileApp", "App")
+                        .WithMany("LibraryApps")
+                        .HasForeignKey("AppId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("xTremeShop.Models.UserLibrary", "Library")
+                        .WithMany("LibraryApps")
+                        .HasForeignKey("LibaryId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("xTremeShop.Models.UserLibrary", b =>
+                {
+                    b.HasOne("xTremeShop.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }
