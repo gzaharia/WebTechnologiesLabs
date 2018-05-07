@@ -1,10 +1,20 @@
 ﻿<Properties StartupConfiguration="{753466A9-D45C-4FAD-A0B6-370167282F6D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ManageController.cs">
     <Files>
+      <File FileName="Controllers/MobileAppsController.cs" Line="151" Column="53" />
+      <File FileName="Models/MobileApp.cs" Line="11" Column="29" />
+      <File FileName="Models/UserLibrary.cs" Line="24" Column="43" />
+      <File FileName="Views/MobileApps/Index.cshtml" Line="63" Column="57" />
+      <File FileName="Models/MobileAppViewModel.cs" Line="8" Column="36" />
+      <File FileName="Models/ApplicationUser.cs" Line="10" Column="48" />
       <File FileName="Data/ApplicationDbContext.cs" Line="20" Column="29" />
-      <File FileName="xTremeShop.csproj" Line="9" Column="13" />
-      <File FileName="Startup.cs" Line="30" Column="87" />
-      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="64" Column="13" />
+      <File FileName="Controllers/AccountController.cs" Line="443" Column="10" />
+      <File FileName="Models/AccountViewModels/RegisterViewModel.cs" Line="17" Column="124" />
+      <File FileName="Views/Account/NotAuthorized.cshtml" Line="7" Column="5" />
+      <File FileName="Views/Account/Register.cshtml" Line="6" Column="11" />
+      <File FileName="Views/MobileApps/Edit.cshtml" Line="16" Column="49" />
+      <File FileName="Controllers/ManageController.cs" Line="9" Column="31" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -58,7 +58,8 @@ namespace xTremeShop.Migrations
                     Downloads = table.Column<int>(nullable: false),
                     Price = table.Column<decimal>(nullable: false),
                     Rating = table.Column<float>(nullable: false),
-                    Title = table.Column<string>(nullable: true)
+                    Title = table.Column<string>(nullable: true),
+                    UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

@@ -11,7 +11,7 @@ using xTremeShop.Data;
 namespace xTremeShop.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180504063233_InitialCreate")]
+    [Migration("20180507083716_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -206,6 +206,8 @@ namespace xTremeShop.Migrations
                     b.Property<float>("Rating");
 
                     b.Property<string>("Title");
+
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 

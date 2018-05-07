@@ -1,4 +1,4 @@
-﻿@model IEnumerable<xTremeShop.Models.MobileApp>
+﻿@model IEnumerable<xTremeShop.Models.MobileAppViewModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -59,12 +59,15 @@
                     @Html.DisplayFor(modelItem => item.Category)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
-                    @if (User.IsInRole("Administrator"))
-                    {
-                        <a asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
-                    }
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+<!--                    if (User.IsInRole("Administrator"))-->
+                        @if (item.FullAccess)
+                        {
+                            @: |
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                            @: |
+                            <a asp-action="Delete" asp-route-id="@item.Id"> Delete </a>
+                        }
                 </td>
             </tr>
         }

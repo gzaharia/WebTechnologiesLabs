@@ -437,6 +437,11 @@ namespace xTremeShop.Controllers
             return View();
         }
 
+        public IActionResult NotAuthorized()
+        {
+            return View("NotAuthorized");
+        }
+
         #region Helpers
 
         private void AddErrors(IdentityResult result)
